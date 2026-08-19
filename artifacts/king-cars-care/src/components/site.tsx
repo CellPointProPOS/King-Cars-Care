@@ -1,7 +1,7 @@
 import { useEffect, useState, type FormEvent, type ReactNode } from 'react';
 import { ArrowUpRight, Gauge, MapPin, Menu, MessageCircle, Phone, Search, Send, ShieldCheck, Snowflake, Wrench, X } from 'lucide-react';
 import { Link, useLocation } from 'wouter';
-import logoPath from '@assets/1_1787141064808.png';
+import logoPath from '@assets/Exact_Logo_Preservation_Package_1787142276494.png';
 import { services } from '@/lib/site-data';
 
 export function SiteNav() {
