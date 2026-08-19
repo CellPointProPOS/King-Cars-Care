@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "King Cars Care"
+description = "A responsive marketing website for King Cars Care, a professional automotive repair shop in Youngstown, Ohio, with service pages, contact details, reviews placeholder, and a static-friendly booking form."
+version = "1.0.0"
+id = "artifacts/king-cars-care"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18261
+
+[services.development]
+run = "pnpm --filter @workspace/king-cars-care run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/king-cars-care", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/king-cars-care/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18261"
+BASE_PATH = "/"
