@@ -1,7 +1,7 @@
 import { useEffect, useState, type FormEvent, type ReactNode } from 'react';
 import { ArrowUpRight, Gauge, MapPin, Menu, MessageCircle, Phone, Search, Send, ShieldCheck, Snowflake, Wrench, X } from 'lucide-react';
 import { Link, useLocation } from 'wouter';
-import logoPath from '@assets/Exact_Logo_Preservation_Package_1787142276494.png';
+import logoPath from '@assets/Exact_Logo_Preservation_Package_(1)_1788029900726.png';
 import { services } from '@/lib/site-data';
 
 export function SiteNav() {
@@ -53,7 +53,7 @@ export function Marquee() {
 }
 
 export function WhatsAppButton() {
-  return <a className="whatsapp" href="https://wa.me/13305405588" target="_blank" rel="noreferrer" data-testid="link-whatsapp"><MessageCircle size={15} /> WhatsApp us</a>;
+  return <a className="whatsapp" href="https://wa.me/13305405588" target="_blank" rel="noreferrer" data-testid="link-whatsapp"><MessageCircle size={15} /> WhatsApp us · (330) 540-5588</a>;
 }
 
 export function SiteFooter() {
@@ -68,7 +68,7 @@ export function SiteFooter() {
           <div className="footer-links">
             <Link href="/services" data-testid="link-footer-services">Services</Link>
             <a href="/#booking" data-testid="link-footer-booking">Book service</a>
-            <a href="tel:+13305405588" data-testid="link-footer-phone">Call shop</a>
+            <a href="https://wa.me/13305405588" target="_blank" rel="noreferrer" data-testid="link-footer-phone">WhatsApp shop</a>
           </div>
         </div>
         <div className="footer-bottom">
@@ -185,5 +185,5 @@ export function ReviewsSection() {
 }
 
 export function ContactSection() {
-  return <section id="contact" className="contact-section section-pad"><div className="container-wide contact-layout"><h2 className="display">LOCAL SERVICE.<br />DIRECT SUPPORT.</h2><div className="contact-details"><p><MapPin size={13} style={{ verticalAlign: 'middle', marginRight: 5 }} />8 N Raccoon Rd<br />Youngstown, OH 44515</p><p><Phone size={13} style={{ verticalAlign: 'middle', marginRight: 5 }} />(330) 540-5588</p><a href="https://www.google.com/maps/search/?api=1&query=8+N+Raccoon+Rd,+Youngstown,+OH+44515" target="_blank" rel="noreferrer" data-testid="link-directions">Get directions <ArrowUpRight size={14} /></a></div></div></section>;
+  return <section id="contact" className="contact-section section-pad"><div className="container-wide contact-layout"><h2 className="display">LOCAL SERVICE.<br />DIRECT SUPPORT.</h2><div className="contact-details"><p><MapPin size={13} style={{ verticalAlign: 'middle', marginRight: 5 }} />8 N Raccoon Rd<br />Youngstown, OH 44515</p><p><Phone size={13} style={{ verticalAlign: 'middle', marginRight: 5 }} />(330) 540-5588</p><div className="contact-actions"><a href="https://www.google.com/maps/search/?api=1&query=8+N+Raccoon+Rd,+Youngstown,+OH+44515" target="_blank" rel="noreferrer" data-testid="link-directions">Get directions <ArrowUpRight size={14} /></a><a href="https://wa.me/13305405588" target="_blank" rel="noreferrer" data-testid="link-contact-whatsapp">WhatsApp us <MessageCircle size={14} /></a></div></div></div></section>;
 }
